@@ -1,8 +1,8 @@
 * {
-   margin: 0;
-   padding: 0; 
-   box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -11,18 +11,17 @@
 }
 
 header {
-    display: inline-block;
     margin-top: 44px;
     margin-left: 76px;
 }
 
-.link-header {
-font-size: 24px;
-font-weight: 600;
-color: rgba(152, 157, 156, 1);
-margin-right: 23px;
-cursor: pointer;
-line-height: 29px;
+a {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(152, 157, 156, 1);
+    margin-right: 23px;
+    cursor: pointer;
+    line-height: 29px;
 }
 
 a:hover {
@@ -34,17 +33,17 @@ a:active {
     opacity: 0.9;
 }
 
-.header-button {
+.button-header {
     width: 170px;
     height: 41px;
     color: #FFF;
     font-size: 24px;
     font-weight: 600;
     line-height: normal;
-    background: black ;
-    border:none;
+    background: black;
+    border: none;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 button:hover {
@@ -55,29 +54,31 @@ button:active {
     opacity: 0.5;
 }
 
-.logo-image {
-    width: 568px;
-    height: 500px;  
-    margin-bottom: 50px;
-    margin-left: 125px;
-    margin-right: 80px;
-    margin-top: 100px;
-    position: relative;
-}
-
-
-section {
+.container-left {
+    margin: 144px 0 0 125px;
     display: inline-block;
-    margin-left: 86px;
-    margin-top: 10px;
-    margin-right: 10px;
 }
+
+.logo-image {
+    max-width: 568px;
+    max-height: 500px;
+    width: 100%;
+}
+
+
+.container-right {
+    display: inline-block;
+    margin: 10px 10px 0 86px;
+}
+
 h1 {
     color: #515151;
     font-size: 100px;
     font-weight: 900;
     line-height: 122px;
     width: 513px;
+    margin: 0 0 15px 0;
+    text-align: center;
 }
 
 h2 {
@@ -86,92 +87,100 @@ h2 {
     font-weight: 900;
     line-height: 122px;
     width: 513px;
+    margin: 0 0 15px 0;
+    text-align: center;
 }
 
 p {
     color: #848484;
     font-size: 24px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 29px;
     margin-top: 28px;
     margin-bottom: 50px;
     width: 515px;
+    height: 87px;
+    text-align: center;
 }
 
-.main-button {
+.button-section {
     background: rgba(173, 255, 0, 1);
     border-radius: 30px;
     width: 239px;
     height: 64px;
-    border:none;
+    border: none;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 28px;
     font-weight: 700;
     line-height: 34px;
     color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-left: 123px;
 }
 
-@media screen and (max-width: 450px) {
-    .container-left {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    }
+@media screen and (max-width: 500px) {
 
-    .container-right {
-        display: block;
-        height: auto;
-        width: 100%;
-        position: static;
-        padding: 0;
-    }
-
-    .logo-image {
-        position: static;
-        max-width: 74%;
-
-    }
-
-    header{
+    header {
         display: none;
-    }
-
-    h1 {
-        font-size: 30px;
-        line-height: 25px; 
-        width: auto;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 30px;
-        line-height: 25px; 
-        width: auto;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: auto;
-        margin-bottom: 20px;
-        text-align: center;
-
     }
 
     p {
         display: none;
     }
-    
-    button{
-        margin-left: 40px;
+
+    .container-left {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    img {
+        margin: auto;
+        margin-top: 149px;
+        display: block;
+        max-width: 354px;
+        max-height: 317px;
+    }
+
+    .container-right {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 61px;
+        color: #515151;
+        display: block;
+        margin: auto;
+        margin-top: 24px;
+        width: auto;
+        height: auto;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 61px;
+        color: #515151;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .button-section {
+        margin-left: 60px;
         margin-bottom: 10px;
+        margin-top: 30px;
         display: block;
         cursor: pointer;
 
     }
-    
+
+
 }
