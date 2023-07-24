@@ -1,6 +1,6 @@
 <h1>WE CARE</h1>
 <br>
-<h2>Página de site responsivo<h2>
+<h2>Página de site responsivo.<h2>
 <br>
 <a href="https://wellitonsansao07.github.io/PROJETO-WE-CARE-RESPONSIVO"/>Entre aqui</a>
 <br>
